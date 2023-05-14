@@ -4,6 +4,9 @@ services:
   app:
     build:
       context: .
+    environment:
+      - SECRET_KEY=devsecretkey
+      - DEBUG=1
     ports:
       - 8000:8000
     volumes:
