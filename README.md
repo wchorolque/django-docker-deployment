@@ -1,5 +1,7 @@
 # django-docker-deployment
 
+https://www.youtube.com/watch?v=mScd-Pc_pX0&t=3577s
+
 - Crear requirements.txt
 - Crear Dockerfile
 - Crear docker-compose.yml
@@ -27,4 +29,9 @@ docker-compose run --rm app sh -c "python manage.py startapp core"
 - Crear migraciones de la nueva app
 ````
 docker-compose run --rm  app sh -c "python manage.py makemigrations"
+````
+
+- Para iniciar el servicio ejecutamos
+````bash
+docker-compose up
 ````
